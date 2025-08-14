@@ -1,41 +1,215 @@
-# Small Dishes Showcase
+# 精緻小菜館 - Small Dishes Showcase
 
-精美的小菜介紹網站，展示各式小菜的圖片、介紹和特色，參考日式餐具網站的優雅設計風格
+🥢 精美的小菜介紹網站，展示各式小菜的圖片、介紹和特色，參考日式餐具網站的優雅設計風格
 
-## Quick Start
+## 🌟 專案特色
 
-1. **Read CLAUDE.md first** - Contains essential rules for Claude Code
-2. Follow the pre-task compliance checklist before starting any work
-3. Use proper module structure under `src/main/js/`
-4. Commit after every completed task
+- 📱 **響應式設計** - 完美適配手機、平板、桌面各種螢幕尺寸
+- 🎨 **優雅設計** - 日式簡約風格，視覺舒適
+- 🖼️ **產品展示** - 精美的小菜圖片與詳細介紹
+- 🔍 **分類篩選** - 5 個分類輕鬆瀏覽不同類型小菜
+- ✨ **互動體驗** - 平滑動畫、模態框詳情、表單驗證
+- 📍 **完整功能** - 首頁、分類、推薦、關於我們、聯絡頁面
 
-## 專案特色
+## 🍱 小菜分類
 
-- 📱 響應式設計，適配各種螢幕尺寸
-- 🎨 優雅的日式風格設計
-- 🖼️ 精美的產品展示頁面
-- 🔍 分類瀏覽和篩選功能
-- 📸 圖片畫廊和詳細介紹
+- **全部** - 瀏覽所有精選小菜
+- **涼拌小菜** - 清爽開胃的涼拌系列
+- **醃漬小菜** - 傳統古法醃製美味
+- **時令小菜** - 季節限定新鮮蔬菜
+- **招牌小菜** - 店家特色推薦組合
 
-## 技術架構
+## 🚀 快速開始
 
-- **Frontend**: HTML5, CSS3, JavaScript (ES6+)
-- **Style Framework**: 待定 (可能使用 Bootstrap 或 Tailwind CSS)
-- **Build Tools**: 待設定 (Webpack, Parcel 等)
-- **Testing**: 待設定 (Jest, Cypress 等)
+### 1. 開啟網站
+直接在瀏覽器中開啟 `index.html` 檔案，或使用本地伺服器：
 
-## 專案結構
+```bash
+# 使用 Python
+python -m http.server 3000
+# 或
+python3 -m http.server 3000
 
-- **Simple Projects:** Basic src/, tests/, docs/, output/ structure
-- **Standard Projects:** Full application structure with modular organization  
-- **AI/ML Projects:** Complete MLOps-ready structure with data, models, experiments
+# 使用 Node.js (需要安裝 http-server)
+npx http-server -p 3000
 
-## Development Guidelines
+# 使用 PHP
+php -S localhost:3000
+```
 
-- **Always search first** before creating new files
-- **Extend existing** functionality rather than duplicating  
-- **Use Task agents** for operations >30 seconds
-- **Single source of truth** for all functionality
-- **Language-agnostic structure** - works with HTML, CSS, JS, etc.
-- **Scalable** - start simple, grow as needed
-- **Flexible** - choose complexity level based on project needs
+### 2. 瀏覽功能
+- 🏠 **首頁** - 精美的主視覺和網站介紹
+- 🍽️ **分類篩選** - 點擊分類按鈕篩選不同小菜
+- 👆 **產品詳情** - 點擊小菜卡片查看詳細資訊
+- 📱 **響應式導航** - 移動端漢堡選單
+- 📞 **聯絡表單** - 完整的表單驗證功能
+
+## 🛠️ 技術架構
+
+### 前端技術
+- **HTML5** - 語義化標籤結構
+- **CSS3** - 現代化樣式和動畫
+- **JavaScript ES6+** - 模組化程式架構
+- **響應式設計** - Mobile-first 方法
+
+### 程式架構
+```
+src/
+├── main/
+│   ├── js/                    # JavaScript 模組
+│   │   ├── core/             # 核心資料和邏輯
+│   │   │   └── data.js       # 小菜資料庫
+│   │   ├── utils/            # 工具函數
+│   │   │   └── helpers.js    # DOM、動畫、驗證工具
+│   │   ├── components/       # UI 組件
+│   │   │   ├── navigation.js # 導航系統
+│   │   │   └── products.js   # 產品展示系統
+│   │   └── services/         # 應用服務
+│   │       └── main.js       # 主應用控制器
+│   └── resources/            # 靜態資源
+│       ├── styles/           # 樣式檔案
+│       │   └── main.css      # 主要樣式
+│       └── images/           # 圖片資源
+```
+
+### 核心功能模組
+- **Navigation** - 導航選單、滾動監聽、響應式選單
+- **ProductDisplay** - 產品展示、分類篩選、模態框
+- **SmallDishesApp** - 主應用控制器、表單處理、錯誤管理
+- **Utils/Helpers** - DOM操作、動畫、驗證、本地儲存等工具
+
+## 📊 產品資料
+
+網站展示 **12 種精選小菜**：
+
+### 涼拌系列 🥗
+- 涼拌黑木耳 - 爽脆營養，夏日首選
+- 涼拌海帶絲 - 清爽不膩，富含碘質  
+- 涼拌小黃瓜 - 解膩清香
+- 涼拌豆干絲 - 高蛋白質，素食友好
+- 涼拌花生 - 下酒良伴
+- 涼拌三絲 - 經典組合，口感豐富
+
+### 醃漬系列 🥒
+- 醃蘿蔔 - 傳統古法，酸甜開胃
+- 泡菜 - 韓式風味，富含益生菌
+- 醬瓜 - 古早味傳承
+- 醃高麗菜 - 營養豐富，清爽口感
+
+### 特色系列 🌟
+- 季節野菜 - 時令推薦，新鮮自然
+- 招牌綜合小菜 - 多種口味一次享用
+
+## 🎨 設計風格
+
+### 色彩搭配
+- **主色** - 棕色系 (#8B4513, #D2691E) - 溫暖的木質感
+- **輔助色** - 灰藍色系 (#2c3e50, #34495e) - 沉穩專業
+- **背景色** - 淺色系 (#fafafa, #f8f9fa) - 清潔簡約
+
+### 視覺元素
+- **圓角設計** - 柔和友善的視覺感受
+- **卡片布局** - 清楚的資訊階層
+- **漸層效果** - 增加視覺深度
+- **微動畫** - 提升互動體驗
+
+## 🔧 開發指南
+
+### CLAUDE.md 規則
+專案遵循 CLAUDE.md 中的開發規範：
+- 🚫 **禁止事項** - 不在根目錄建立檔案、不重複程式碼、不使用互動式 git 指令
+- ✅ **必要事項** - 每個任務完成後提交、搜尋後再建立新檔案、使用 Task agents 處理長時間操作
+- 🛠️ **執行模式** - 並行 Task agents、系統化工作流程、GitHub 自動備份
+
+### 新增功能步驟
+1. **搜尋現有** - 使用 Grep/Glob 工具找到相關程式碼
+2. **閱讀理解** - 了解現有架構和模式
+3. **延伸功能** - 在現有基礎上擴展，避免重複
+4. **測試驗證** - 確保功能正常運作
+5. **提交變更** - 提交並推送到 GitHub
+
+## 📱 響應式設計
+
+### 斷點設計
+- **桌面** (>1024px) - 完整多欄佈局
+- **平板** (768px-1024px) - 兩欄適應佈局  
+- **手機** (<768px) - 單欄堆疊佈局
+
+### 移動端優化
+- 觸控友好的按鈕尺寸
+- 漢堡式導航選單
+- 適合手指操作的間距
+- 快速載入的圖片處理
+
+## 🧪 測試功能
+
+### 手動測試清單
+- [ ] 所有導航連結正常運作
+- [ ] 分類篩選功能正確
+- [ ] 產品詳情模態框開啟/關閉
+- [ ] 聯絡表單驗證和提交
+- [ ] 響應式設計在不同螢幕尺寸
+- [ ] 滾動動畫和視覺效果
+- [ ] 瀏覽器相容性 (Chrome, Firefox, Safari, Edge)
+
+### 效能檢查
+- 圖片載入時間
+- JavaScript 錯誤檢查
+- CSS 動畫流暢度
+- 記憶體使用量
+
+## 🚀 部署選項
+
+### 靜態網站託管
+- **GitHub Pages** - 免費，直接從 repository 部署
+- **Netlify** - 自動化部署，CDN 加速
+- **Vercel** - 高效能，支援 serverless
+- **Surge.sh** - 快速部署命令行工具
+
+### 本地測試伺服器
+```bash
+# npm 腳本 (推薦)
+npm start
+
+# Python 內建伺服器
+python -m http.server 3000
+
+# PHP 內建伺服器  
+php -S localhost:3000
+
+# Node.js http-server
+npx http-server -p 3000
+```
+
+## 📝 更新日誌
+
+### v1.0.0 (2024-08-14)
+- ✨ 完整的小菜展示網站
+- 🎨 響應式日式風格設計
+- 🔧 模組化 JavaScript 架構
+- 📱 移動端優化
+- 🖼️ 12 種小菜完整資料
+- 📋 聯絡表單驗證系統
+- 🎬 滾動動畫和過渡效果
+
+## 📄 授權
+
+MIT License - 可自由使用和修改
+
+## 🤝 貢獻
+
+歡迎提交 Issue 和 Pull Request！
+
+### 貢獻指南
+1. Fork 專案
+2. 建立功能分支 (`git checkout -b feature/new-feature`)
+3. 提交變更 (`git commit -am 'Add new feature'`)
+4. 推送到分支 (`git push origin feature/new-feature`)
+5. 建立 Pull Request
+
+---
+
+**🎯 Template by Chang Ho Chien | HC AI 說人話channel | v1.0.0**  
+**📺 Tutorial**: https://youtu.be/8Q1bRZaHH24
+
+**🤖 Generated with [Claude Code](https://claude.ai/code)**
