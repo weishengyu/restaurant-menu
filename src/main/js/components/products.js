@@ -158,14 +158,8 @@ class ProductDisplay {
     }
 
     getProductImage(imagePath) {
-        // 檢查圖片是否存在，如果不存在則使用預設圖片
-        const placeholderImages = {
-            1: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjI1MCIgdmlld0JveD0iMCAwIDMwMCAyNTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzMDAiIGhlaWdodD0iMjUwIiBmaWxsPSIjRjhGOUZBIi8+CjxyZWN0IHg9IjEyNSIgeT0iMTAwIiB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIGZpbGw9IiM4QjQ1MTMiLz4KPHRlGcmN4PSIxNTAiIHk9IjE3NSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBmaWxsPSIjNjY2IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj7mtb7mi6zlub/mnKjogbU8L3RleHQ+Cjwvc3ZnPgo=',
-            2: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjI1MCIgdmlld0JveD0iMCAwIDMwMCAyNTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzMDAiIGhlaWdodD0iMjUwIiBmaWxsPSIjRjhGOUZBIi8+CjxjaXJjbGUgY3g9IjE1MCIgY3k9IjEyNSIgcj0iMzAiIGZpbGw9IiNEMjY5MUUiLz4KPHR5eHQgeD0iMTUwIiB5PSIxNzUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgZmlsbD0iIzY2NiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+5bCP6I+c6K+55Zu+44CQ6L+Z6YeM77yM5L2g5YCR55qE5YaN5p2l5o6i57Sv5LiA5LiL77yBPC90ZXh0Pgo8L3N2Zz4K'
-        };
-        
-        // 如果有對應的預設圖片則使用，否則使用通用預設圖片
-        return placeholderImages[1] || imagePath;
+        // 直接返回圖片路徑，讓 onerror 處理載入失敗的情況
+        return imagePath;
     }
 
     renderNoResults() {
