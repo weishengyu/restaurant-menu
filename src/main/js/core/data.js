@@ -144,6 +144,18 @@ const dishesData = {
             ingredients: ["豆干絲", "海帶絲", "紅蘿蔔絲", "香菜", "調味料"],
             nutrition: "多元營養，口感層次豐富",
             badge: "經典組合"
+        },
+        {
+            id: 13,
+            name: "煙燻豬耳朵",
+            description: "精選豬耳朵經慢火煙燻，口感Q彈有嚼勁，煙燻香氣濃郁，是下酒的絕佳選擇。",
+            category: "signature",
+            price: "NT$ 200",
+            image: "src/main/resources/images/smoked-pig-ear.jpg",
+            featured: true,
+            ingredients: ["豬耳朵", "煙燻", "醬油", "香料", "蒜泥"],
+            nutrition: "富含膠原蛋白，口感獨特",
+            badge: "招牌特色"
         }
     ],
 
