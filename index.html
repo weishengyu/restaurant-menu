@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>精緻小菜館 - 傳統風味，現代品味</title>
-    <meta name="description" content="精選各式傳統小菜，融合現代工藝，呈現最純粹的美味體驗">
+    <title>小菜日和｜ Side Dish Daylight - 傳統風味，現代品味</title>
+    <meta name="description" content="小菜日和｜ Side Dish Daylight - 精選各式傳統小菜，融合現代工藝，呈現最純粹的美味體驗">
     <link rel="stylesheet" href="src/main/resources/styles/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Georgia:wght@400;500;700&family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- 導航列 -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <h1>精緻小菜館</h1>
+                <h1>小菜日和</h1>
             </div>
             <ul class="nav-menu" id="nav-menu">
                 <li class="nav-item">
@@ -46,9 +46,17 @@
     <section class="hero" id="hero">
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1 class="hero-title">傳統風味，現代品味</h1>
-            <p class="hero-subtitle">精選各式傳統小菜，融合現代工藝，呈現最純粹的美味體驗</p>
-            <button class="cta-button" onclick="scrollToSection('categories')">探索美味</button>
+            <div class="hero-text">
+                <h1 class="hero-title">小菜日和｜ Side Dish Daylight</h1>
+                <p class="hero-subtitle">傳統的真味，現代的講究。</p>
+                <div class="cta-buttons">
+                    <button class="primary-cta" onclick="scrollToSection('products')">立即選購</button>
+                    <button class="secondary-cta" onclick="scrollToSection('about')">探索風味</button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <!-- 右側視覺區域，讓背景圖片自然顯示 -->
+            </div>
         </div>
     </section>
 
@@ -82,11 +90,11 @@
             <div class="featured-grid">
                 <div class="featured-item">
                     <div class="featured-image">
-                        <img src="src/main/resources/images/featured-1.jpg" alt="涼拌黑木耳" loading="lazy">
+                        <img src="src/main/resources/images/smoked-boneless-chicken-feet.jpg" alt="鳳爪" loading="lazy">
                     </div>
                     <div class="featured-content">
-                        <h3>涼拌黑木耳</h3>
-                        <p>嚴選優質黑木耳，搭配特製醬料，口感爽脆，營養豐富</p>
+                        <h3>鳳爪</h3>
+                        <p>精選鳳爪經傳統工藝處理，口感軟嫩入味，膠原蛋白豐富，是美容養顏的經典小菜</p>
                         <span class="featured-badge">人氣推薦</span>
                     </div>
                 </div>
@@ -102,11 +110,11 @@
                 </div>
                 <div class="featured-item">
                     <div class="featured-image">
-                        <img src="src/main/resources/images/featured-3.jpg" alt="涼拌海帶絲" loading="lazy">
+                        <img src="src/main/resources/images/black-pepper-edamame.jpg" alt="黑胡椒毛豆" loading="lazy">
                     </div>
                     <div class="featured-content">
-                        <h3>涼拌海帶絲</h3>
-                        <p>新鮮海帶絲配以蒜泥香油，清爽不膩，夏日首選</p>
+                        <h3>黑胡椒毛豆</h3>
+                        <p>精選新鮮毛豆配以黑胡椒調味，口感飽滿有嚼勁，營養豐富的健康小菜</p>
                         <span class="featured-badge">清爽首選</span>
                     </div>
                 </div>
@@ -121,30 +129,30 @@
                 <div class="about-text">
                     <h2 class="section-title">關於我們</h2>
                     <p class="about-description">
-                        精緻小菜館秉持著對傳統美味的堅持與創新精神，每一道小菜都經過精心調製，
-                        選用最優質的食材，以現代化的製程保留最純正的古早味。
+                        小菜日和堅持傳統工藝與現代品質的完美結合，每一道小菜都經過三代傳承的古法調製，
+                        嚴選產地直送的新鮮食材，用最純粹的心意，呈現最道地的台式風味。
                     </p>
                     <p class="about-description">
-                        我們相信，美食不僅是味覺的享受，更是文化的傳承。
-                        在這裡，您能品嚐到最道地的台式小菜，感受家的溫暖。
+                        我們深信，美味來自用心，品質源於堅持。在快節奏的生活中，
+                        讓每一口小菜都成為您味蕾的慰藉，家的記憶，讓傳統美味在現代餐桌上重新綻放光芒。
                     </p>
                     <div class="about-features">
                         <div class="feature">
-                            <h4>精選食材</h4>
-                            <p>嚴選當地優質食材</p>
+                            <h4>🌱 產地直送食材</h4>
+                            <p>與在地小農合作，每日清晨採購最新鮮的蔬菜，從產地到餐桌不超過24小時，確保每一口都是自然的鮮甜。無農藥殘留檢測，讓您吃得安心更健康。</p>
                         </div>
                         <div class="feature">
-                            <h4>傳統工藝</h4>
-                            <p>堅持古法製作技藝</p>
+                            <h4>👴 三代傳承古法</h4>
+                            <p>承襲阿公阿嬤的手作技藝，堅持72小時慢工醃製，不添加人工防腐劑與味精。每道小菜都經過師傅親手調味，保留最純正的傳統風味，讓您重溫兒時的美好回憶。</p>
                         </div>
                         <div class="feature">
-                            <h4>現代品質</h4>
-                            <p>符合現代衛生標準</p>
+                            <h4>🏆 國際認證品質</h4>
+                            <p>通過ISO22000食品安全認證，採用無菌包裝技術，延長保鮮期至30天。每批產品都經過嚴格品質檢測，給您五星級的安全保障，讓美味與健康完美並存。</p>
                         </div>
                     </div>
                 </div>
                 <div class="about-image">
-                    <img src="src/main/resources/images/about-us.jpg" alt="關於我們" loading="lazy">
+                    <img src="src/main/resources/images/品牌圖.png" alt="小菜日和 - 傳統市場美食" loading="lazy">
                 </div>
             </div>
         </div>
@@ -158,11 +166,7 @@
                 <div class="contact-info">
                     <div class="contact-item">
                         <h4>地址</h4>
-                        <p>台北市大安區精緻路123號</p>
-                    </div>
-                    <div class="contact-item">
-                        <h4>電話</h4>
-                        <p>(02) 1234-5678</p>
+                        <p>台北市萬華區長順街46巷</p>
                     </div>
                     <div class="contact-item">
                         <h4>營業時間</h4>
@@ -170,7 +174,7 @@
                     </div>
                     <div class="contact-item">
                         <h4>電子郵件</h4>
-                        <p>info@delicate-dishes.tw</p>
+                        <p>wei91627@gmail.com</p>
                     </div>
                 </div>
                 <div class="contact-form">
@@ -199,8 +203,8 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h4>精緻小菜館</h4>
-                    <p>傳統風味，現代品味</p>
+                    <h4>小菜日和</h4>
+                    <p>Side Dish Daylight - 每一道小菜，都是日常的美好</p>
                 </div>
                 <div class="footer-section">
                     <h4>快速連結</h4>
@@ -213,12 +217,12 @@
                 </div>
                 <div class="footer-section">
                     <h4>聯絡資訊</h4>
-                    <p>台北市大安區精緻路123號</p>
-                    <p>(02) 1234-5678</p>
+                    <p>台北市萬華區長順街46巷</p>
+                    <p>wei91627@gmail.com</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 精緻小菜館. All rights reserved.</p>
+                <p>&copy; 2024 小菜日和｜ Side Dish Daylight. All rights reserved.</p>
             </div>
         </div>
     </footer>
